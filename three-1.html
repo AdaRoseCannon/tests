@@ -104,7 +104,8 @@
 					const material = new THREE.MeshStandardMaterial( {
 						color: Math.random() * 0xffffff,
 						roughness: 0.7,
-						metalness: 0.0
+						metalness: 0.0,
+						map: target.texture
 					} );
 
 					const object = new THREE.Mesh( geometry, material );
